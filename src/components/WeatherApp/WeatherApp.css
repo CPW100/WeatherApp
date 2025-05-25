@@ -1,0 +1,33 @@
+.weather-app-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 15vh;
+
+    /* background image */
+    background-image: url('/bg-light.png'); /* If stored in public folder */
+    background-size: cover;                
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.search-section {
+    height: 4rem;
+    width: calc(100vw - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto; 
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+.display-section {
+    height: calc(100vh - 15vh - 5rem - 4rem);
+    width: calc(100vw - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    padding: 0rem 1rem 0rem 1rem;
+}

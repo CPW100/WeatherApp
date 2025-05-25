@@ -1,0 +1,80 @@
+/* Theme variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #0077ff;
+  --bg-image: url('/bg-light.png');
+  --search-icon: url('/search-light.png');
+  --font-family: 'Noto Sans', sans-serif;
+  --font-color1: rgba(0, 0, 0, 1);
+  --font-color2: rgba(102, 102, 102, 1);
+
+  /* Search Bar */
+  --color-searchLabel: rgba(0, 0, 0, 0.4);
+  --color-searchInput: rgba(0, 0, 0, 1);
+  --color-searchBar: rgba(255, 255, 255, 0.2);
+  --color-searchButton: rgba(108, 64, 181, 1);
+  --color-searchIcon: rgba(255, 255, 255, 1);
+
+  /* Weather Display */
+  --font-temperature: rgba(108, 64, 181, 1);
+  --color-dataDisplay: rgba(255, 255, 255, 0.2);
+
+  /* History */
+  --color-dateTime: rgba(0, 0, 0, 1);
+  --color-history: rgba(255, 255, 255, 0.2);
+  --color-historyItem: rgba(255, 255, 255, 0.4);
+  --color-buttonIcon: rgba(255, 255, 255, 1);
+  --color-buttonBorder: rgba(255, 255, 255, 1);
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #1e90ff;
+  --bg-image: url('/bg-dark.png');
+  --search-icon: url('/search-dark.png');
+  --font-family: 'Noto Sans', sans-serif;
+  --font-searchLabel: rgba(0, 0, 0, 0.4);
+  --font-color1: rgba(255, 255, 255, 1);
+  --font-color2: rgba(255, 255, 255, 0.5);
+
+  /* Search Bar */
+  --color-searchLabel: rgba(255, 255, 255, 0.4);
+  --color-searchInput: rgba(255, 255, 255, 1);
+  --color-searchBar: rgba(26, 26, 26, 0.5);
+  --color-searchButton: rgba(40, 18, 77, 1);
+  --color-searchIcon: rgba(255, 255, 255, 1);
+
+  /* Weather Display */
+  --font-temperature: rgba(255, 255, 255, 1);
+  --color-dataDisplay: rgba(26, 26, 26, 0.3);
+
+  /* History */
+  --color-dateTime: rgba(255, 255, 255, 0.5);
+  --color-history: rgba(26, 26, 26, 0.3);
+  --color-historyItem: rgba(26, 26, 26, 0.5);
+  --color-buttonIcon: rgba(26, 26, 26, 0.5);
+  --color-buttonBorder: rgba(255, 255, 255, 0.4);
+}
+
+/* Base styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0rem;
+  padding: 0rem;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  width: 100vw;
+  height: 100vw;
+}

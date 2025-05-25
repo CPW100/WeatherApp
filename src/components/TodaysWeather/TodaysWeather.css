@@ -1,0 +1,112 @@
+.todays-weather-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    row-gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.search-error,
+.no-search {
+    font-size: 2vh; 
+    font-family: var(--font-family);
+    color: var(--font-color1);
+    background-color: var(--color-history);
+    border-radius: 1vh;
+    width: 100%;
+    padding: 1vh;
+}
+
+.left-group-weather {
+    min-width: 0;
+    flex-shrink: 1;
+    flex-direction: column;
+    text-align: left;
+}
+
+.right-group-weather {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    height: 100%;
+}
+
+.right-group-weather .other-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.right-group-weather .other-info .clouds,
+.right-group-weather .other-info .temperature,
+.right-group-weather .other-info .humidity,
+.right-group-weather .other-info .api-datetime {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.right-group-weather .other-info .temperature {
+    color: transparent;
+}
+
+.weather-title,
+.temperature,
+.temperature-range,
+.other-info {
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.weather-title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 2vh; 
+    font-family: var(--font-family);
+    color: var(--font-color1);
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: var(--font-family);
+    color: var(--font-temperature);
+}
+
+.temperature-range{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 2vh; 
+    font-family: var(--font-family);
+    color: var(--font-color1);
+}
+
+.other-info {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2%;
+    font-size: 2vh;
+    font-family: var(--font-family);
+    color: var(--font-color2);
+}
+
+@media (min-height: 701px) {
+    .temperature{
+        font-size: 5rem;
+    }
+}
+
+@media (max-height: 700px) {
+    .temperature{
+        font-size: 4rem;
+    }
+}

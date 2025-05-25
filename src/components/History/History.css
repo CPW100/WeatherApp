@@ -1,0 +1,71 @@
+.history-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: start;
+  overflow: hidden;
+  background-color: var(--color-history);
+  border-radius: 2vh;
+}
+
+.history-title {
+  align-items: start;
+  font-size: 2vh;
+  width: calc(100% - 2vh);
+  padding: 1vh 1vh 0 1vh;
+  font-family: var(--font-family);
+  color: var(--font-color1);
+}
+
+.history-menu {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 0vh 1vh 0 1vh;
+  width: calc(100% - 2vh);
+  font-size: 2vh;
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 1vh;
+  gap: 1.5vh;
+}
+
+.menu-item {
+  list-style: none;
+  width: 100%;
+  border-radius: 1.5vh;
+  background-color: var(--color-historyItem);
+}
+
+.no-history  {
+  font-size: 2vh; 
+  font-family: var(--font-family);
+  color: var(--font-color1);
+  background-color: var(--color-history);
+  border-radius: 1vh;
+  width: calc(100% - 4vh);
+  padding: 1vh;
+}
+
+/* Hide scrollbar arrows and customize the bar */
+.history-menu::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.history-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.history-menu::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.history-menu::-webkit-scrollbar-thumb {
+  background: #797979;
+  border-radius: 10px;
+}
