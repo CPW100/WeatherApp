@@ -23,8 +23,8 @@ Users can search for weather information by country and toggle between light and
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/CPW100/WeatherApp.git
+cd WeatherApp
 
 2. Install Dependencies
 npm install
