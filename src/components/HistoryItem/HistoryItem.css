@@ -62,12 +62,20 @@
     background-color: var(--color-buttonIcon);
     border: 1px solid var(--color-buttonBorder);
     border-radius: 50%;
+    display: flex;                 
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;       
+    overflow: hidden; 
 }
 
 .search-icon {
-    padding-top: 0.2rem;
+    /* padding-top: 0.2rem; */
     width: 1rem;
     height: 1rem;
+    max-width: 100%;     
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .trash-button {
@@ -80,12 +88,20 @@
     background-color: var(--color-buttonIcon);
     border: 1px solid var(--color-buttonBorder);
     border-radius: 50%;
+    display: flex;                
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;       
+    overflow: hidden; 
 }
 
 .trash-icon {
-    padding-top: 0.2rem;
+    /* padding-top: 0.2rem; */
     width: 1rem;
     height: 1rem;
+    max-width: 100%;    
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .trash-button:focus,
