@@ -115,9 +115,9 @@ function WeatherApp() {
   }, []);
 
   // Change theme (for testing purpose)
-  useEffect(() => {
-    setTheme('dark')
-  }, []);
+  // useEffect(() => {
+  //   setTheme('dark')
+  // }, []);
   
   return (
     <main className='weather-app-container'
